@@ -1,0 +1,135 @@
+body{margin: 0;font-family: 'Darker Grotesque', sans-serif; }
+a{text-decoration: none;}
+nav a{color: white;}
+nav{display: flex; height: fit-content; justify-content:space-between;padding:0 1em; text-align: center;}
+section.navbar{position: fixed;width: 100%;z-index: 1;}
+
+div#news{background-color: #62665e; }
+div#news p{padding:0.3em 0.6em; text-align: center;font-size: 1.2em;color:white; margin:0;}
+
+.topnav {
+  position: relative;
+  overflow: hidden;
+  background-color: #333;
+  text-align: center;
+}
+
+nav a {
+  font-weight: 500;
+  font-size: 1.2em;
+}
+.topnav-centered a {
+ justify-content: center;
+   font-size: 2.3em;
+   margin-left: 3em;
+}
+.topnav-left {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+
+}
+
+.topnav-right {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.topnav-right a,.topnav-left a{margin-right: 2.5em;}
+
+.topnav-right img{width: 2.3vw;height: auto;align-content: center; margin-left:1em;}
+header{background-image:  url("img/banner.jpg"); width: auto;height: 81vh;z-index: -1; background-position: center;background-size: cover; }
+
+section.grid{display: grid; grid-template-columns: 20% 80%;}
+section.grid h2{font-size: 3em; color: white;line-height:0.8em;font-weight:300; }
+section.grid>div{transform:translate(5rem, 55ex);}
+.button{ width:90%;padding: 0.3em 0; font-size: 1.2em;text-align:center; }
+.ToW{ background-color:#62665E;border:1px solid #62665E;color:white;}
+.ToG{ background-color:white;border:1px solid #62665E;color:black;}
+section.grid>div>p.ToW:hover{background-color: white; color:black;}
+p.ToW:hover{cursor: pointer;}
+p.ToG:hover{background-color: #62665E; color:white;cursor: pointer;}
+
+main{background-color: #F9F7F5}
+main div.top{display: flex;justify-content: space-between;}
+main div.top p{font-size: 1.2em;font-weight:400;text-decoration: underline;align-self: center;margin-top: 3.5em;}
+main div.top p:hover{cursor: pointer;}
+main div.top div p,span{display: inline-block;}
+main div.top span{font-size: 1.4em;font-weight:300;align-self: center;}
+main div.top h2{font-size: 3em;font-weight:300;margin-bottom: 0.4em; }
+div.items{display: grid; grid-template-columns: 1fr 1fr 1fr;grid-gap: 1.3em;}
+div.items img{width: 100%;}
+.outer{position: relative;margin-bottom: 1em;}
+.inner img{position: absolute;top:0;left:0;}
+.inner{display: none;}
+.outer:hover .inner{display: block; cursor: pointer;}
+div.description>img{width: 27% !important;}
+div.description>p{width: 100%;margin: 0.5em 0 0 0;}
+div.flex{display: flex; justify-content: space-between; }
+div.flex p{width: 48%;margin: 0;}
+div.flex h3{margin: 0.3em 0;}
+section.lighter{background-color: #F9F7F5; padding: 0 5em 4em 5em;}
+section.about{background-color: #f3efea;padding: 4em 5em 8em 5em;display: grid;grid-template-columns: 1fr 1fr;}
+section.about img{width:100%;}
+.text{margin-top: auto;margin-bottom: auto;}
+.text h1{font-size: 4em;font-weight: 400;margin: 0 0 0.5em 0;}
+.text p{font-size: 1.2em;font-weight: 400;margin: 0;}
+div.dropdowns>div h2,hr{display: block;align-self: flex-end;}
+div.dropdowns h2{font-size: 1.2em;margin: 0 0 1em 0;}
+div.dropdowns hr{width: 60%;float: left;margin: 0;}
+div.dropdowns span{margin-right:7.3em;font-size: 2.2em;align-self: center;}
+div.moveline{height: fit-content; position: absolute;margin-top: -3em;}
+div.moveline img{width:100%;background-color: white; border-top: 1px solid black;border-bottom: 1px solid black;}
+div#glasses{margin:0;width: auto;display:block; height:35em; background-image:url("img/glasses.jpg");background-position: top;background-size: cover;} 
+div#over{width: 20%;position: absolute;margin: 17em 0 0 70em; }
+div#over h2, p{display: block;}
+div#over p{text-decoration: underline; bottom: 0;margin:0; }
+div#over h2{font-size: 4em;font-weight: 300;line-height:1em;margin-bottom:0.3em; }
+div#quoite{background-color: #f3efea;text-align: center; padding: 0.8em 0;border-top:1px solid black;border-bottom:1px solid black;}
+div#quoite img{width: 5.5em;margin-top:1.4em;}
+div#quoite h2{font-size: 3em; font-weight: 300; width: 60%;margin:0.3em auto;line-height: 0.8em;}
+div#quoite p{font-size: 1.2em;font-weight: 400;}
+section.limited{padding: 0 5em 2em 5em;}
+section.limited h3{font-size: 1.2em;}
+div.limiteditems{display: grid; grid-template-columns: repeat(4, 1fr);grid-gap: 1em;}
+div.outer img{width: 100%;}
+
+.nav-scrolled {
+  --text: #333;
+  --text-inverse: #f4f4f4;
+  background-color: white;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+}
+.color{color:black;}
+
+
+section.autographs{background-color: #f3efea;padding: 4em 11em 4em 9em;display: grid;grid-template-columns: 1fr 1fr;grid-gap: 7em;align-items: center;}
+section.autographs>img{width:100%;}
+section.autographs div.text{margin-bottom: 4em;}
+.text h2{font-size: 3.8em;font-weight: 400; line-height: 0.9em;margin-bottom: 0.8em;}
+.text img{width: 9em;display: inline-grid;margin-top:1em;margin-right: 1.8em;}
+div.logos img{width: 100%; height: auto;}
+section.newsletter{padding:0 28em;text-align: center;}
+section.newsletter h2{font-size: 2.5em;font-weight: 300;margin-bottom:0.5em;}
+div#newsletter{display: flex; justify-content: space-between;}
+.Newsletter__Input{padding: 0;
+    background: 0;
+    width: 100%;
+    border: none;
+    font-size: 16px;}
+input[type="submit" i]{border: none;background: 0;color: #777777;font-size: 16px;}
+input[type="submit" i]:hover{cursor: pointer;}
+input[type="email" i]:focus { 
+    border-color: #777777;
+ }
+footer>hr{color: black;margin: 4em 0 3em 0;}
+footer section#images{display: grid; grid-template-columns: repeat(4, 1fr);grid-gap: 1em;padding: 0 5em 0.5em 5em;}
+footer section#images img{width: 100%;}
+footer section#links{display: flex;justify-content: space-between;padding: 0 5em;}
+footer section#links a{color: black;display: block;line-height: 1.8em;font-weight: bold;font-size: 1.1em;}
+footer section#links a:hover{cursor: pointer;}
+footer section#links {margin-right: 1.5em;}
+footer section#links img{width: 12em;}
+footer div.bottom{display: flex; justify-content: space-between;padding: 0 5em;align-items: center;}
+footer div.bottom h2{font-weight: 300;margin: 0;}
+footer>hr#bottom{margin: 2em 0 0 0;}
