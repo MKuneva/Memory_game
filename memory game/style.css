@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+* {
+
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: black;
+  display: flex;
+  line-height: 7vh;
+  font-family: 'Press Start 2P', cursive;
+  overflow-y: hidden;
+}
+.body{    
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  }
+
+h1{font-size: 2em;}
+h3{font-size: 0.9em;}
+
+.memory-game {
+  width: 640px;
+  height: 640px;
+  margin: auto;
+  display: none;
+  flex-wrap: wrap;
+}
+
+.memory-card {
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  margin: 5px;
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+.red{background-color: red;}
+.blue{background-color: blue;}
+.green{background-color: green;}
+.white{background-color: white;}
+.yellow{background-color: yellow;}
+.purple{background-color: purple;}
+
+.memory-card:active {
+  transform: scale(0.97);
+  transition: transform .2s;
+}
+
+.memory-card.flip {
+  transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  border-radius: 5px;
+  backface-visibility: hidden;
+}
+.back-face{background-color: grey;}
+
+.front-face {
+  transform: rotateY(180deg);
+}
+
+
+.popup-button {
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.popup-button:hover {
+  cursor: pointer;
+}
+
+.button-accept {
+  background: green;
+  color: white;
+}
+
+.button-accept:hover {
+  filter: brightness(130%);
+}
+.button-cancel {
+  background: red;
+  color: white;
+}
+
+.button-cancel:hover {
+  filter: brightness(150%);
+}
+
+.popup {
+  border: 3px solid black;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+
+#welcome{
+  display: block;
+  margin: 0;
+}
+
+#timer{
+  position: absolute;
+  top:0;
+  right: 2%;
+  color: white;
+}
+.memory-game h2{
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 2%;
+
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 1;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content {
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  width: 100%; /* Could be more or less, depending on screen size */
+}
+
+#won,#lost{
+  color: white;
+  font-size: 13vh;
+  pointer-events: none;
+}
