@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>Vite App</title>
+  </head>
+  <body  >
+    
+    <header>
+        <img id="logo" src="img/logo.png">
+        <div class="banner fixed padB">
+            <img class="icon next back" src="img/next.png">
+            <div class="com com1 active">
+                <div class="circle yellow" id="profilec"></div>
+                <div class="namemess">
+                    <h2 class="white">Joe</h2>
+                    <h3 class="light">Active now</h3>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+    <main class="vh">
+        <ul class="chatbox" id="chatbox">
+            <li class="incoming">
+                <div class="circle yellow" id="profilec"></div>
+                <p>Lorem ipsum dolor sit amet, lorem <br>ipsum dolor sit amet</p>
+            </li>
+            <li class="outgoing">
+                <p>Lorem ipsum dolor sit amet</p>
+            </li>
+            <li class="incoming">
+                <div class="circle yellow" id="profilec"></div>
+                <p>Lorem ipsum dolor sit amet, lorem <br>ipsum dolor sit amet</p>
+            </li>
+            <li class="outgoing">
+                <p>Lorem ipsum dolor st</p>
+            </li>
+            <li class="incoming">
+                <div class="circle yellow" id="profilec"></div>
+                <p>Lorem ipsum dolor sit amet</p>
+            </li>
+            <li class="outgoing">
+                <p>Lorem ipsum dolor st</p>
+            </li>
+            <li class="incoming">
+                <div class="circle yellow" id="profilec"></div>
+                <p>Lorem ipsum dolor sit amet, lorem <br>ipsum dolor sit amet<br>ipsum dolor sit amet</p>
+                
+            </li>
+            <li class="outgoing">
+                <p>Lorem ipsum dolor sit amet</p>
+            </li>
+            <li class="incoming">
+                <div class="circle yellow" id="profilec"></div>
+                <p>Lorem ipsum dolor sit amet, lorem <br>ipsum dolor sit amet</p>
+            </li>
+        </ul>
+        
+    
+        <section class="menu" id="reply"> 
+            <div id="input_container">
+                <form id="form">
+                    <textarea type="text" id="ip1" placeholder="Message..."></textarea>
+                    <div class="button two">
+                        <i><img id="camera" src="img/camera.png"></i>
+                    </div>
+                    <div class="others">
+                        <img class="ic"  id="rec" src="img/microphone.png">
+                        <img class="ic"  id="imgs" src="img/gallery.png">
+                        <img class="ic"  id="sticker" src="img/sticker.png">
+                    </div>
+
+                    <input type="image" class="none sendMess" name="submit" src="img/send.png"  id="send" >
+                </form>
+            </div>
+        <div class="buttons">
+            <div class="button">
+            <i><img id="home" src="img/home.png"></i>
+            </div>
+
+            <div class="button">
+            <i><img id="files" src="img/folder.png"></i>
+            </div>
+
+            <div class="button">
+            <i><img id="messenger" src="img/writing.png"></i>
+            </div>
+
+            <div class="button">
+            <i><img id="myProfile" src="img/user.png"></i>
+            </div>
+            </div>
+
+        </section>
+   
+
+    </main>
+    
+    
+    <script type="module" src="/main.js"></script>
+    <script type="module" src="/chat.js"></script>
+    <script type="module" src="/home.js"></script>
+
+  </body>
+</html>

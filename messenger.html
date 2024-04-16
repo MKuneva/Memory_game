@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>Vite App</title>
+  </head>
+  <body class="hide">
+    <header>
+        <img id="logo" src="img/logo.png">
+        <div class="banner fixed">
+            <img class="icon next back" src="img/next.png">
+            <div class="flex">
+                <h2 class="bold">CHATS&nbsp;</h2>
+                <h2 id="groups">/&nbsp;GROUPS</h2>
+            </div>
+            <div class="span"></div>
+        </div>
+    </header>
+    <main class="vh">
+        <form id="searchF" class="flex" action="/messenger.html" >
+            <input type="text" class="serchbar" id="ip1" placeholder="Search..."></textarea>
+            <input type="image" name="submit" src="img/search.png"  id="search" >
+        </form>
+        <section class="messeges">
+            <div class="com com1 chat" >
+                <div class="circle yellow" id="profilec"></div>
+                <div class="namemess">
+                    <h3 class="bold white">Joe</h3>
+                    <h3 class="bold white small">Lorem ipsum dolor sit amet</h3>
+                </div>
+                <h3 class="bold white">1m</h3>
+            </div>
+            <div class="com com1 chat" >
+                <div class="circle blue" id="profilec"></div>
+                <div class="namemess">
+                    <h3 class="white">Joe</h3>
+                    <h3 class="small">Lorem ipsum dolor sit amet</h3>
+                </div>
+                <h3>4m</h3>
+            </div>
+            <div class="com com1 paddingB chat">
+                <div class="circle" id="profilec"></div>
+                <div class="namemess">
+                    <h3 class="white">Joe</h3>
+                    <h3 class="small">Lorem ipsum dolor sit amet</h3>
+                </div>
+                <h3>15m</h3>
+            </div>
+        </section>
+        
+
+    <section class="menu" id="reply"> 
+      <div class="buttons">
+        <div class="button">
+          <i><img id="home" src="img/home.png"></i>
+        </div>
+
+        <div class="button">
+          <i><img id="files" src="img/folder.png"></i>
+        </div>
+
+        <div class="button">
+          <i><img id="messenger" src="img/writing.png"></i>
+        </div>
+
+        <div class="button">
+          <i><img id="myProfile" src="img/user.png"></i>
+        </div>
+        </div>
+
+    </section>
+   
+
+    </main>
+    
+    
+    <script type="module" src="/main.js"></script>
+    <script type="module" src="/home.js"></script>
+
+  </body>
+</html>

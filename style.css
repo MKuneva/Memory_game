@@ -1,0 +1,366 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #4f4f4f;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h2{
+  font-family: 'Post No Bills Jaffna SemiBold Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.28em;
+  margin: 0;
+}
+h3{
+  font-family: 'Post No Bills Jaffna SemiBold Regular';
+  font-style: normal;
+  font-weight: normal;
+  color: #B5B5B5;
+  font-size: 1.25em;
+}
+
+.yellow{background-color: #e2e99c!important;}
+.blue{background-color: #98e9ee!important;}
+.red{background-color: rgb(222, 147, 147)!important;}
+
+
+body {
+  margin: 0;
+  margin: auto;
+  background-color: #242424;
+
+ 
+}
+
+main{margin: 0 1.7em;    padding-top: 6em;}
+ 
+header{
+  width: 100%;
+  position: fixed;
+  background-color: #212121;
+  height: 11.5vh;
+  display: flex;
+  flex-direction: column;
+}
+img#logo{
+  width: 60%;
+    height: 80%;
+    margin: auto;
+  
+}
+
+.banner{display: flex; justify-content: space-between;padding-top:1.1em;align-items: center;}
+.icon{width: 1.3em;height: 10%;}
+.posts{padding: 0;}
+.posts h3{margin: 0;}
+
+.circle{
+  width:75%;
+  padding-bottom:75%;
+  background:#0E7463;
+  border-radius:75%;
+}
+
+.post1>.banner{width: 100%;}
+.profile{display: flex;}
+.circle#profilec{width: 30px;height: 30px;padding-bottom: 0;background-color: green;}
+.profile>h3{margin-left: 0.5em;color: white;}
+.user{width: 20%;display: flex;flex-direction: column;justify-content: center;align-items: center;}
+.online{margin: 1.2em 0 0 0;display: flex;width: 100%; justify-content: center;}
+.online h3{margin: 0.7em auto;}
+hr{width: 100vw; margin-left:-1.7em;background-color:#373737;border:0;height: 1px;}
+
+
+.banner.posts>h3{font-size: 1.05em;}
+.cont{margin: 0.1em 0em 0.1em 2em;}
+.question h3{ margin:0;line-height: 1.4em;font-size: 1.05em;}
+.rect{width: 100%;height: 20vh;background-color: white;margin-top: 0.5em;}
+.com>div{display: flex;}
+.com h3{margin: 0;font-size: 1.05em;}
+.com>div> h3{margin: 0 0.5em;}
+
+
+.menu{background-color: #212121;position: fixed;width: 100%;bottom: 0;left: 0;}
+.buttons{margin:auto;display: grid;justify-content: center;width: 100%;grid-template-columns: 1fr 1fr 1fr 1fr;grid-gap:0.1em;justify-items: center;width: 80%;padding-top: 0.5em;padding-bottom: 0.5em;}
+i {
+  background: #0E7463;
+  border-radius: 10px;
+  font-size: 15px;
+  text-align: center;
+  margin-right: 7px;
+  border-radius:50%;
+  display:inline-block;
+  padding:7px;
+  height: 25px;
+  width: 25px;
+}
+i>img{ display:block;width: 100%;}
+
+
+/*REPLIES PAGE*/
+.next{transform: rotate(180deg);height: 50%;margin-left: 8%;    align-self: center;}
+.pages{margin-bottom: 1.3em;}
+.com1{display: flex;justify-content: flex-end;width: 100%;margin-right: 0;}
+.com1>h3{text-align: right;}
+.namemess{display: flex;flex-direction: column;width: 70%;}
+.white{color: #ffffff;}
+.padding{padding-top: 5em;}
+
+
+.fixed{position:relative;width: 100%!important;background-color: #242424;height: 10em;top:12.9%;left:0;}
+div.span{width: 15%;}
+
+#ip1 {
+  display: flex;
+  border-radius: 4em;
+  margin: auto;
+  margin-top:1em;
+  margin-bottom:1em;
+  background: rgb(53, 53, 53);
+  padding: 0.5em 0.1em 0.1em 0.1em; 
+  width:70%;
+  height: 2em; 
+
+    
+}
+#input_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+input,textarea:focus {
+  outline: none !important;
+}
+textarea#ip1{
+  max-height: 4em;
+  padding-left: 4em;
+  padding-right: 4em;
+  font-style: normal;
+  font-weight: normal;
+  color: #B5B5B5;
+  font-size: 0.8em;
+  font-family: 'Post No Bills Jaffna SemiBold Regular';
+}
+
+input,textarea:focus {
+  color: #ffffff;
+}
+
+
+#form{width: 100%;}
+#send{width: 20px;height: auto; position: absolute;right: 0;top: 0;margin-top: 20px;margin-right: 20px;}
+.one {
+  position:absolute;
+  top:0;
+  margin-left: 18px;
+  margin-top: 18px;
+  width: 25px !important;
+  height: 25px !important;
+}
+section#reply{border-top:1px solid rgb(50, 50, 50);}
+div.paddingB{padding-bottom:10em;}
+
+
+/*MESSENGER*/
+.flex{display: flex;}
+.bold{font-family: 'Post No Bills Jaffna ExtraBold Regular';
+  font-style: normal;
+  font-weight: normal;}
+
+.serchbar{width: 90%!important;margin: 0!important;padding: 0.5em 1.2em 0.5em 1.2em!important;} 
+#search{width: 1.5em;height: 100%;margin-left: 1em;}
+#searchF{margin-top: 4em;align-items: center;justify-items: center;}
+.messeges{padding-top: 2em;}
+.messeges>div{justify-content: center!important;}
+.messeges div.com {margin-bottom: 1em;}
+.messeges div.com>div.circle{align-self:center ;}
+.messeges div.com>h3{align-self:center ;}
+.chat>div.namemess h3{line-height: 1.3em!important;}
+.small{font-size: 1em!important;}
+.padB{padding-bottom: 1em;}
+
+
+
+/*PROFILE*/
+.vh{height: 100vh;}
+.details>div.circle{width: 9em!important;height: 4.5em!important;padding-bottom: 4em!important;}
+.details{display: flex;flex-direction: column;justify-items: center;align-items: center;text-align: center;padding-top: 5em;}
+.details h2{font-size: 1.3em;margin: 1em 0 0.5em 0;}
+.details h3{font-size: 1.05em;margin: 0 0 0.5em 0;}
+.light{  font-family: 'Post No Bills Jaffna Light Regular';}
+.medium{font-family: 'Post No Bills Jaffna Medium Regular';}
+.details>div{display: flex;width: 70%;margin: auto;justify-content: space-around;}
+.button1{background-color: #253737;border-radius: 1em;width: 38%;}
+h2.button1{padding: 0.2em 0.4em;}
+
+/*FILES*/
+.recent{display: flex;width: 100%;align-items: flex-end;}
+.add{width: 4%;height: auto;margin-right: 8%;}
+.file{display: flex;flex-direction: column;align-items: center;text-align: center;width: 25%;}
+.fol{width: 60%;height: auto;}
+.docum{width: 55%;height: auto;}
+.file h3{font-size: 1em;margin-top: 0.4em;}
+.top{display: flex;margin-top: 5em;}
+.top>img{transform: rotate(0deg)!important;}
+.shared{margin-top: 2em ;}
+.shared>h2{font-size: 1.2em;margin-bottom:1em;}
+
+.hide{overflow-y: hidden;}
+
+/*CHAT*/
+.active{justify-content: flex-start!important;margin-left: 1em;}
+.active>div.namemess{margin-left: 0.6em;text-align: left;align-content: center;margin-top: 0.3em;}
+.active>div.namemess>h2{line-height: 1.3em!important;font-size: 1em;}
+.active>div.namemess>h3{margin: 0;line-height: 1.3em;font-size: 0.8em;}
+.active>div.circle{align-self:center;width: 30px !important;height: 30px !important;}
+
+.chatbox{padding: 0;    height: 90%;}
+.incoming,.outgoing{display: flex; margin-bottom:0.7em ;}
+.incoming>div.circle{width: 25px !important;height: 25px !important;align-self: center;}
+.incoming p{margin: 0 0 0 1em!important;font-family: 'Post No Bills Jaffna Regular';background-color:#474747;padding: 0.5em 1em; border-radius: 2em;}
+.outgoing p{margin: 0!important;font-family: 'Post No Bills Jaffna Regular';background-color:#0E7463;padding: 0.5em 1em; border-radius: 2em;}
+.incoming{justify-content: flex-start;}
+.outgoing{justify-content: flex-end;}
+.two>i {
+  
+  height: 15px;
+  width: 15px;
+}
+.two{top:0;
+  margin-left: 1em;
+  margin-top: 4.5%;position: absolute;}
+.none{display: none;}
+.vis{display: block;}
+.others{right: 0;position: absolute;top:0;margin-top: 5.3%;margin-right: 0.4em;}
+.others img{width: 20%;margin-left: 0.4em;}
+.vh100{height: 100%;}
+#adjust{height: 500px;}
+
+
+
+
+/* ALL MODALS styling */
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  text-transform: uppercase;
+  text-align: center;
+}
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #3b3b3b;
+  padding: 1rem 1.5rem;
+  width: 70%;
+  border-radius: 0.5rem;
+}
+.modal-content h2{
+  padding: 1%; 
+  width: 20%;
+  display: block;
+}
+
+.modal-content h2:hover{
+  background-color: #c9c7c7;
+  cursor: pointer;
+}
+.close-button {
+  float: right;
+  width: 1.5rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 1em;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  color: #ffffff;
+
+}
+
+
+
+/*the class that is added to toggle the modal (shows and hides modals)*/
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1.0);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+.new{height: auto;width: 32px;}
+.options{display: flex;margin-top:15%; justify-content: space-around;}
+.naming{width: 80%;margin-top: 15%;}
+.naming:focus{color: #212121;}
+.enterName{display: flex;justify-content: space-between;align-items: flex-end;margin-top: 5%;}
+.enterName h3{margin: 0 0 0 1em;}
+.modal-content>h3{top:0;left:8%;position: absolute;}
+.uploadFile{margin-top: 2em;display: flex;flex-direction: column;justify-content: center; align-items: center;}
+.margin{  margin-bottom: 10%;}
+
+@font-face {
+  font-family: 'Post No Bills Jaffna Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Post No Bills Jaffna Regular'), url('font1/PostNoBillsJaffna-Regular.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Post No Bills Jaffna Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Post No Bills Jaffna Bold'), url('font1/PostNoBillsJaffna-Bold.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Post No Bills Jaffna Light Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Post No Bills Jaffna Light Regular'), url('font1/PostNoBillsJaffna-Light.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Post No Bills Jaffna Medium Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Post No Bills Jaffna Medium Regular'), url('font1/PostNoBillsJaffna-Medium.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Post No Bills Jaffna SemiBold Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Post No Bills Jaffna SemiBold Regular'), url('font1/PostNoBillsJaffna-SemiBold.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Post No Bills Jaffna ExtraBold Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Post No Bills Jaffna ExtraBold Regular'), url('font1/PostNoBillsJaffna-ExtraBold.woff') format('woff');
+  }

@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>Vite App</title>
+  </head>
+  <body class="hide">
+    <header>
+        <img id="logo" src="img/logo.png">
+        <div class="banner fixed">
+            <img class="icon next back" src="img/next.png">
+            <h2>MY FILES</h2>
+            <img class="icon add" src="img/add.png" >
+        </div>
+    </header>
+    <main class="vh">
+        <section class="top">
+            <div class="recent">
+                <div class="file append-folder">
+                    <img src="img/folder.png" class="fol icon" >
+                    <h3>FED</h3> 
+                    </div>
+                <div class="file append-folder">
+                    <img src="img/folder.png" class="fol icon" >
+                    <h3>MP</h3> 
+                </div>
+                <div class="file">
+                    <img src="img/document.png" class="docum icon" >
+                    <h3>UCD</h3> 
+                </div>
+                <div class="file">
+                    <img src="img/document.png" class="docum icon" >
+                    <h3>GP</h3> 
+                </div>
+                
+            </div>
+            <img class="icon next margin" src="img/next.png">
+        </section>
+        <section class="shared">
+            <h2>SHARED WITH ME</h2>
+            <div class="recent">
+                <div class="file">
+                    <img src="img/folder.png" class="fol icon" >
+                    <h3>Data</h3> 
+                    </div>
+                <div class="file">
+                    <img src="img/folder.png" class="fol icon" >
+                    <h3>js</h3> 
+                </div>
+                <div class="file"></div>
+                <div class="file"></div>
+                <div class="file"></div>
+                <div class="file"></div>
+
+            </div>
+
+        </section>
+        <section class="menu" id="reply"> 
+        <div class="buttons">
+            <div class="button">
+            <i><img id="home" src="img/home.png"></i>
+            </div>
+
+            <div class="button">
+            <i><img id="files" src="img/folder.png"></i>
+            </div>
+
+            <div class="button">
+            <i><img id="messenger" src="img/writing.png"></i>
+            </div>
+
+            <div class="button">
+            <i><img id="myProfile" src="img/user.png"></i>
+            </div>
+            </div>
+
+        </section>
+        <!-- YOGA CONFIRM MODAL -->
+			<div class="modal Yoga">
+				<div class="modal-content">
+					<!--close button that close the modal by removing the show-modal class-->
+					<span class="close-button" >&times;</span>
+                    <div class="options">
+                        <div class="openNewF">
+                            <img src="img/add-folder.png">
+                            <h3>ADD FOLDER</h3>
+                        </div>
+                        <div class="openNewD">
+                            <img src="img/file.png" >
+                            <h3>ADD NEW FILE</h3>
+                        </div>
+                        
+                    </div>
+                    
+				</div>
+			</div>
+
+            <div class="modal nameF">
+				<div class="modal-content">
+					<!--close button that close the modal by removing the show-modal class-->
+					<span class="close-button" >&times;</span>
+                    <h3>ENTER FOLDER NAME:</h3>
+                    <div class="enterName">
+                        <input  name="submit" class="naming" placeholder="Enter Folder Name"> 
+                        <h3 class="button1 f">ADD</h3>
+                    </div>
+                    
+				</div>
+			</div>
+
+            <div class="modal newDocument">
+                <div class="modal-content">
+                  <!-- Close button that closes the modal by removing the show-modal class -->
+                  <span class="close-button">&times;</span>
+                  <h3>UPLOAD DOCUMENT:</h3>
+                    <div class="uploadFile">
+                        <input type="file" class="fileInput">
+                        <input type="text" class="naming D" placeholder="Enter Document Name">
+                        <h3 class="button1 d">UPLOAD</h3>
+                    </div>
+                </div>
+              </div>
+
+    </main>
+    
+    
+    <script type="module" src="/main.js"></script>
+    <script type="module" src="/home.js"></script>
+
+  </body>
+</html>
